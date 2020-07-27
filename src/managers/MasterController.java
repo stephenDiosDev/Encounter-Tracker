@@ -1,6 +1,9 @@
 package managers;
 
-public class MasterController {
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class MasterController extends Application {
 
     /**
      * Should setup any variables like the setup page
@@ -9,4 +12,7 @@ public class MasterController {
     public MasterController() {
         System.out.println("CREATED MASTER CONTROLLER");
     }
+
+    @Override
+    public void start(Stage stage) throws Exception { }
 }
