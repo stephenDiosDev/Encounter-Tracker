@@ -33,7 +33,7 @@ public class SetupManager extends Application{
         //FXMLLoader loader = new FXMLLoader();
         //loader.setLocation(SetupManager.class.getResource("/src/fxmlPages/setupPage.fxml"));
         //VBox root = loader.load();
-        VBox root = FXMLLoader.load(getClass().getResource("/fxmlPages/setupPage.fxml"));
+        VBox root = FXMLLoader.load(getClass().getResource("/home/stephen/Projects/Encounter-Tracker/src/fxmlPages/setupPage.fxml"));
 
         System.out.println("HERE");
         Scene scene = new Scene(root);

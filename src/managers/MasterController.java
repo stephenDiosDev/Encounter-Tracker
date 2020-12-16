@@ -3,7 +3,7 @@ package managers;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class MasterController{
+public class MasterController extends Application{
 
     /**
      * Should setup any variables like the setup page
@@ -18,10 +18,21 @@ public class MasterController{
     once it is created do a check to see if it exists rather than recreate it
      */
 
-    public MasterController() {
+    public MasterController(){
         //instantiate the setup manager
         setupManager = new SetupManager(mainStage);
         System.out.println("CREATED MASTER CONTROLLER SUCCESSFULLY");
+
+        try {
+            start(mainStage);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage = new Stage();
     }
 
 
