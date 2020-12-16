@@ -30,9 +30,10 @@ public class SetupManager extends Application{
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(SetupManager.class.getResource("/fxmlPages/setupPage.fxml"));
-        VBox root = loader.load();
+        //FXMLLoader loader = new FXMLLoader();
+        //loader.setLocation(SetupManager.class.getResource("/src/fxmlPages/setupPage.fxml"));
+        //VBox root = loader.load();
+        VBox root = FXMLLoader.load(getClass().getResource("/fxmlPages/setupPage.fxml"));
 
         System.out.println("HERE");
         Scene scene = new Scene(root);

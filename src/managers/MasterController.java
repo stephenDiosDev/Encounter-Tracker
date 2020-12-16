@@ -10,7 +10,7 @@ public class MasterController{
      * Should switch
      */
     private SetupManager setupManager;  //the "main" fxml page
-    private EncounterManager encounterManager;
+    private EncounterManager encounterManager;  //the actual combat fxml page
 
     private Stage mainStage;
     /*
